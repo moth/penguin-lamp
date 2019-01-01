@@ -2,7 +2,11 @@
 
 class { 'apache':
   default_vhost => false,
+  mpm_module => 'prefork',
 }
+
+include apache::mod::php
+
 
 apache::vhost { 'moth.zapto.org':
   port          => '80',
@@ -20,6 +24,12 @@ apache::vhost { 'moth2.zapto.org':
 
 file { '/var/www/cat-pictures/index.html':
   content => "<img src='http://bitfieldconsulting.com/files/happycat.jpg'>",
+  owner   => 'www-data',
+  group   => 'www-data',
+}
+
+file { '/var/www/cat-pictures/index2.php':
+  content => "<?php phpinfo(); ?>",
   owner   => 'www-data',
   group   => 'www-data',
 }
