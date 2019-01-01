@@ -1,0 +1,3 @@
+package { 'ruby':
+  ensure => installed,
+}
