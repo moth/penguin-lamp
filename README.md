@@ -76,4 +76,4 @@ I like caret > http://thomaswilburn.net/caret
 
 ## Credits
 
-This borrows heavily from everything I've gleaned from github.com/bitfield and his excellent Puppet Beginner's Guide books. He's a great mentor and consultant.
+This borrows heavily from everything I've gleaned from https://github.com/bitfield and his excellent Puppet Beginner's Guide books. He's a great mentor and consultant.
