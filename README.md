@@ -10,6 +10,8 @@ This write up is from a box-fresh Pixelbook (8GB ram model) on Chrome OS version
 
 The main goal is to set up a bare-bones LAMP stack consisting of *mysql*, *apache*, *php* for *development use only*. I've opted to use standard Puppet Forge modules, available via r10k.
 
+This is shared as a guide, in the hope it will help you fill in some missing parts, rather than be a complete solution.
+
 ## Update your box-fresh Linux container
 
 ```
