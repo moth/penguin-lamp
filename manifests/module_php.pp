@@ -1,1 +1,6 @@
-include php
+class { '::php':
+  ensure     => latest,
+  extensions => {
+    mbstring => {},
+  }
+}
